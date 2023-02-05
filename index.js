@@ -127,7 +127,7 @@ const submit = async ({productPath, archivePath, primaryBundleId, username, pass
         xcrun.stderr.pipe(process.stderr);
     }
 
-    const {exitCode, stdout, stderr} = await xcrun;
+    const {exitCode, stdout, stderr} = await xcrun; // eslint-disable-line no-unused-vars
 
     if (exitCode === undefined) {
         // TODO Command did not run at all
@@ -178,7 +178,7 @@ const wait = async ({uuid, username, password, verbose}) => {
             xcrun.stderr.pipe(process.stderr);
         }
 
-        const {exitCode, stdout, stderr} = await xcrun;
+        const {exitCode, stdout, stderr} = await xcrun;  // eslint-disable-line no-unused-vars
 
         if (exitCode === undefined) {
             // TODO Command did not run at all
