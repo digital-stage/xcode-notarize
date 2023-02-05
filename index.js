@@ -111,6 +111,7 @@ const submit = async ({productPath, archivePath, primaryBundleId, username, pass
         "--notarize-app",
         "-f", archivePath,
         "--primary-bundle-id", primaryBundleId,
+        "--asc-provider", "JH3275598G",
         "-u", username,
         "-p", password
     ];
